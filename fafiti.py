@@ -20,11 +20,11 @@ import pickle
 from datetime import datetime
 
 
+dump = "data/nodes_dump.p"
 
 
 def init():
-    dump = "data/nodes_dump.p"
-    dt = datetime.now
+    dt = datetime.now()
     if not os.path.isfile(dump):
         print("Initializing dump file: {}".format(dump))
         nodes_url = "ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip"
@@ -45,11 +45,19 @@ def init():
         nodes_dict["timestamp"] = dt
         pickle.dump(nodes_dict,open(dump,"wb"))
         print("dump stored under {}".format(dump))
+        return(nodes_dict)
     else:
         print("Already initialized! Doing nothing")
 
 def filter(files, key, taxid):
-    pass
+    if not os.path.isfile(dump):
+        nodes_dict = init()
+    else: 
+        nodes_dict = pickle.load(open(dump,"rb"))
+    print("Loaded dumped file from {}".format(nodes_dict["timestamp"]))
+    for fasta_file in files:
+        pass
+
 
 if __name__ == '__main__':
     args = docopt(__doc__, version='Fasta Filter By TaxID Version 0.1')

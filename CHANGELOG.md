@@ -10,6 +10,7 @@
     + **CHANGED** name of file to fafiti.py
     + **ADDED** folder for NCBI data (data/)
     + **ADDED** function for downloading data by NCBI
+    + **ADDED** Dump import
     
 
 ## Released
