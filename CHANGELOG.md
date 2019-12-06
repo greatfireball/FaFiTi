@@ -11,6 +11,7 @@
     + **ADDED** folder for NCBI data (data/)
     + **ADDED** function for downloading data by NCBI
     + **ADDED** Dump import
+    + **Added** Filter step
     
 
 ## Released
