@@ -8,5 +8,6 @@
     + **ADDED** environment.yml
     + **ADDED** filter_fasta_by_tax_ids.py as main file. CLI implemented with docopt
     + **CHANGED** name of file to fafiti.py
+    + **ADDED** folder for NCBI data (data/)
 
 ## Released
