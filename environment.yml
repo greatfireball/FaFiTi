@@ -1,0 +1,11 @@
+name: fasta_filter_by_tax_ids
+channels:
+  - bioconda
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - docopt
+  - biopython
+
+
