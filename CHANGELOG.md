@@ -7,5 +7,6 @@
     + **ADDED** README: how to install, basic ideas for init and filter
     + **ADDED** environment.yml
     + **ADDED** filter_fasta_by_tax_ids.py as main file. CLI implemented with docopt
+    + **CHANGED** name of file to fafiti.py
 
 ## Released
